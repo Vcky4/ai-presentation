@@ -10,7 +10,7 @@ export const Slide1_Intro: React.FC = () => (
             By Victor Okon
         </p>
         <p style={{ marginTop: '1rem', fontStyle: 'italic' }}>
-            Target Audience: Technical Practitioners & Developers
+            Target Audience: Machine Learning Uyo
         </p>
     </div>
 );
