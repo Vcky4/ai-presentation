@@ -1,20 +1,20 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { slides } from './components/Slides';
 
 function App() {
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [direction, setDirection] = useState<'next' | 'prev' | null>(null);
+
 
     const nextSlide = useCallback(() => {
         if (currentSlide < slides.length - 1) {
-            setDirection('next');
+
             setCurrentSlide(s => s + 1);
         }
     }, [currentSlide]);
 
     const prevSlide = useCallback(() => {
         if (currentSlide > 0) {
-            setDirection('prev');
+
             setCurrentSlide(s => s - 1);
         }
     }, [currentSlide]);
